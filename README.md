@@ -6,14 +6,14 @@ This project implements an authentication feature for a web application, storing
 
 ### Basic Authentication
 
-- **Server Setup:** The application listens on `localhost:5000`(or the address shown in terminal).
+- **Listen on localhost:5000:** The application listens on `localhost:5000`(or the address shown in terminal).
 - **Authentication Form:** An authentication form is rendered at `http://localhost:5000/`.
   ![Alt text](static/images/authentication_form.jpg)
 
 - **Redirection:** Upon successful authentication, the user is redirected to profile page at `http://localhost:5000/profile`.
   ![Alt text](static/images/profile_page.jpg)
 
-- **Data Storage:** Usernames and passwords are stored in either MongoDB or Redis.
+- **Data Storage:** Usernames and passwords are stored in MongoDB.
   ![Alt text](static/images/Database.jpg)
 
 ### Advanced Features (Optional)
