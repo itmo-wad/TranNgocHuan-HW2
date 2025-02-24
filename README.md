@@ -7,7 +7,7 @@ This project implements an authentication feature for a web application, storing
 ### Basic Authentication
 
 - **Listen on localhost:5000:** The application listens on `localhost:5000`(or the address shown in terminal).
-- **Authentication Form:** An authentication form is rendered at `http://localhost:5000/`.
+- **Authentication Form:** An authentication form is rendered at `http://localhost:5000`.
   ![Alt text](static/images/authentication_form.jpg)
 
 - **Redirection:** Upon successful authentication, the user is redirected to profile page at `http://localhost:5000/profile`.
@@ -46,7 +46,7 @@ Profile will be shown with data respected to each account:
 1.  **Clone the Repository:**
 
     ```bash
-    git clone [repository URL]
+    git clone https://github.com/itmo-wad/TranNgocHuan-HW2.git
     ```
 
 2.  **Navigate to the Project Directory:**
