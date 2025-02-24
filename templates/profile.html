@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/profile.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <p class="card__noti">Welcome!</p>
+        <img src="{{profile_picture}}" alt="Person" class="card__image" />
+        <p class="card__name">{{fullname}}</p>
+        <p class="card__birthday">{{dob}}</p>
+        <p class="card__phone">{{phone}}</p>
+        <!--<div class="grid-container">
+          <div class="grid-child-posts">305 Post</div>
+
+          <div class="grid-child-followers">2643 Likes</div>
+        </div>-->
+
+        <button class="btn draw-border">Update profile</button>
+        <button class="btn draw-border">Change password</button>
+        <form method="GET" action="/logout">
+          <button type="submit" class="btn draw-border">Log out</button>
+        </form>
+      </div>
+      <div class="card_right">
+        <div class="detail-section information">
+          <div class="detail-title">
+            <!--<div class="title-icon">
+              <i class="fas fa-heart"></i>
+            </div>-->
+            <span style="padding-top: 1.5rem">Infomation</span>
+          </div>
+          <div class="profile__info">
+            <table class="table Information">
+              <tbody>
+                <tr>
+                  <td>Name</td>
+                  <td>:</td>
+                  <td>{{fullname}}</td>
+                </tr>
+                <tr>
+                  <td>Gender</td>
+                  <td>:</td>
+                  <td>{{gender}}</td>
+                </tr>
+                <tr>
+                  <td>Nationality</td>
+                  <td>:</td>
+                  <td>{{nationality}}</td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td>:</td>
+                  <td>{{email}}</td>
+                </tr>
+                <tr>
+                  <td>Address</td>
+                  <td>:</td>
+                  <td>{{address}}</td>
+                </tr>
+                <tr>
+                  <td>Job</td>
+                  <td>:</td>
+                  <td>{{job}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="detail-section interests">
+          <div class="detail-title">
+            <!--<div class="title-icon">
+              <i class="fas fa-heart"></i>
+            </div>-->
+            <span>Interests</span>
+          </div>
+          <div class="detail-content">
+            <div class="outer-frame">
+              <ul class="favor-list">
+                <li>
+                  <i class="fa-brands fa-tiktok"></i>
+                  <span>Tiktok</span>
+                </li>
+                <li>
+                  <i class="fas fa-gamepad"></i>
+                  <span>Game</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-film"></i>
+                  <span>Movies</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-music"></i>
+                  <span>Music</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-book"></i>
+                  <span>Books</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
